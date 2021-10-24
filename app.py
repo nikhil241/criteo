@@ -12,7 +12,7 @@ def is_user_eligible():
         response = requests.get('http://ip-api.com/json/'+request.args["ip"])
 
     else:
-        response = request.get('http://ip-api.com/json')
+        response = requests.get('http://ip-api.com/json')
 
 
     if 'city' in request.args:
